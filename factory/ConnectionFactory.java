@@ -14,7 +14,7 @@ public class ConnectionFactory
     public Connection getConnection() {
         System.out.println("...conectando ao bando de cacos...");
         try {
-            return DriverManager.getConnection("jdbc:mysql://localhost/empresa", "empresa", "Empresa#2020");
+            return DriverManager.getConnection("jdbc:mysql://localhost/empresa", "empresa", "");
         }
         catch (SQLException excecao) {
             JOptionPane.showMessageDialog(null, "Erro:" + excecao);
